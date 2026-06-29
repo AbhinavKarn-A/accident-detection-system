@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:#f4f7fb;
+
+padding:30px;
+
+}
+
+.header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:40px;
+
+}
+
+.title{
+
+font-size:38px;
+
+font-weight:bold;
+
+color:#111827;
+
+}
+
+.subtitle{
+
+color:#6b7280;
+
+margin-top:5px;
+
+}
+
+.status{
+
+padding:15px 25px;
+
+background:#10b981;
+
+color:white;
+
+border-radius:15px;
+
+font-weight:bold;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(4,1fr);
+
+gap:25px;
+
+margin-bottom:35px;
+
+}
+
+.menu-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,0.08);
+
+text-decoration:none;
+
+color:#111827;
+
+transition:0.3s;
+
+}
+
+.menu-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.menu-card i{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+.menu-card h2{
+
+font-size:22px;
+
+}
+
+.stats{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(3,1fr);
+
+gap:25px;
+
+}
+
+.stat-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+.stat-number{
+
+font-size:50px;
+
+font-weight:bold;
+
+margin-bottom:10px;
+
+}
+
+.stat-title{
+
+font-size:18px;
+
+color:#6b7280;
+
+}
+
+.footer{
+
+margin-top:40px;
+
+background:white;
+
+padding:25px;
+
+border-radius:25px;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,0.08);
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div>
+
+<div class="title">
+
+🚦  AI Accident Dection System
+
+</div>
+
+<div class="subtitle">
+
+AI Accident Detection Dashboard
+
+</div>
+
+</div>
+
+<div class="status">
+
+🟢 System Online
+
+</div>
+
+</div>
+
+
+<div class="grid">
+
+<a href="/video" class="menu-card">
+
+<i class="fa-solid fa-video"></i>
+
+<h2>Detect From Video</h2>
+
+</a>
+
+<a href="/cctv" class="menu-card">
+
+<i class="fa-solid fa-camera"></i>
+
+<h2>Live CCTV</h2>
+
+</a>
+
+<a href="/analytics" class="menu-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h2>Analytics</h2>
+
+</a>
+
+<a href="/logs" class="menu-card">
+
+<i class="fa-solid fa-file-lines"></i>
+
+<h2>Logs</h2>
+
+</a>
+
+</div>
+
+
+<div class="stats">
+
+<div class="stat-card">
+
+<div class="stat-number">
+
+{{vehicles}}
+
+</div>
+
+<div class="stat-title">
+
+🚗 Vehicles Detected
+
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-number">
+
+{{warnings}}
+
+</div>
+
+<div class="stat-title">
+
+⚠️ Warnings
+
+</div>
+
+</div>
+
+
+<div class="stat-card">
+
+<div class="stat-number">
+
+{{accidents}}
+
+</div>
+
+<div class="stat-title">
+
+🚨 Accidents
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+<div>
+
+🧠 AI Engine : YOLO Architecture
+
+</div>
+
+<div>
+
+🖥️ Flask 
+
+</div>
+
+<div>
+
+📍 Nepal Traffic Safety Prototype
+
+</div>
+
+</div>
+
+</body>
+
+</html>

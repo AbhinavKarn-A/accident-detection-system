@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>AI Logs</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:#f4f7fb;
+
+padding:30px;
+
+}
+
+.header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+.title{
+
+font-size:38px;
+
+font-weight:bold;
+
+}
+
+.status{
+
+background:#10b981;
+
+color:white;
+
+padding:12px 20px;
+
+border-radius:15px;
+
+font-weight:bold;
+
+}
+
+.log-container{
+
+background:white;
+
+border-radius:25px;
+
+padding:30px;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+.table-header{
+
+display:grid;
+
+grid-template-columns:
+
+1fr 1fr 1fr 1fr;
+
+padding:20px;
+
+font-weight:bold;
+
+font-size:18px;
+
+border-bottom:
+
+2px solid #eee;
+
+}
+
+.row{
+
+display:grid;
+
+grid-template-columns:
+
+1fr 1fr 1fr 1fr;
+
+padding:22px;
+
+align-items:center;
+
+border-bottom:
+
+1px solid #eee;
+
+transition:0.3s;
+
+}
+
+.row:hover{
+
+background:#f8fafc;
+
+}
+
+.normal{
+
+background:#10b981;
+
+color:white;
+
+padding:8px 14px;
+
+border-radius:10px;
+
+width:120px;
+
+text-align:center;
+
+}
+
+.warning{
+
+background:#f59e0b;
+
+color:white;
+
+padding:8px 14px;
+
+border-radius:10px;
+
+width:120px;
+
+text-align:center;
+
+}
+
+.accident{
+
+background:#ef4444;
+
+color:white;
+
+padding:8px 14px;
+
+border-radius:10px;
+
+width:120px;
+
+text-align:center;
+
+}
+
+.footer{
+
+margin-top:25px;
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+.card{
+
+background:white;
+
+padding:25px;
+
+width:32%;
+
+border-radius:25px;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,0.08);
+
+text-align:center;
+
+}
+
+.big{
+
+font-size:38px;
+
+font-weight:bold;
+
+margin-bottom:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="title">
+
+📄 AI Event Logs
+
+</div>
+
+<div class="status">
+
+🟢 System Online
+
+</div>
+
+</div>
+
+
+<div class="log-container">
+
+<div class="table-header">
+
+<div>Time</div>
+
+<div>Vehicle ID</div>
+
+<div>Location</div>
+
+<div>Status</div>
+
+</div>
+
+
+<div class="row">
+
+<div>10:31:22</div>
+
+<div>#01</div>
+
+<div>Lane 1</div>
+
+<div class="normal">
+
+NORMAL
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div>10:31:27</div>
+
+<div>#02</div>
+
+<div>Lane 2</div>
+
+<div class="warning">
+
+WARNING
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div>10:31:35</div>
+
+<div>#03</div>
+
+<div>Intersection A</div>
+
+<div class="accident">
+
+ACCIDENT
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div>10:31:42</div>
+
+<div>#04</div>
+
+<div>Lane 3</div>
+
+<div class="normal">
+
+NORMAL
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+<div class="card">
+
+<div class="big">
+
+24
+
+</div>
+
+Vehicles Logged
+
+</div>
+
+
+<div class="card">
+
+<div class="big">
+
+3
+
+</div>
+
+Warnings Issued
+
+</div>
+
+
+<div class="card">
+
+<div class="big">
+
+1
+
+</div>
+
+Accidents Detected
+
+</div>
+
+</div>
+
+</body>
+
+</html>
